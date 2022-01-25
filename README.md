@@ -43,4 +43,5 @@
   
 
 ## Preview.
-https://github.com/davidebsen/Netflix-Copy/blob/main/preview.gif
+![Alt Text](https://github.com/davidebsen/Netflix-Copy/blob/main/preview.gif)
+
