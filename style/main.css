@@ -1,0 +1,281 @@
+:root{
+    --vermelho: #e50914;
+    --preta:#141414;
+}
+
+/* Reset - Remove as bordas inciais*/
+* {
+    margin: 0%;
+    padding:0%;
+    box-sizing:border-box;
+}
+
+/*Elemento Base*/
+body {
+    background-color:rgb(0, 0, 0);
+    font-family:  'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: white;
+}
+
+.img-logo{ /* configurações do logo, coloquei imagem em vez do texto do curso */
+    display: flex;
+    margin-left: 10px;
+    width: 100px;
+    height: auto;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top:10px;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+header .navbarLateral {
+    display: flex;
+    align-items: center;
+    padding-inline-end: 150px;
+    flex-direction: row;
+    margin-inline-start: auto;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 25px;
+    border-radius: 5px;
+    margin-right: 6px;
+    margin-left: -10px;
+}
+
+.mainAvatar {
+    margin-right: 5px;
+    margin-left: 1px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 30px;
+    height: auto;
+}
+
+.menuAvatar {
+    margin-right: 5px;
+    margin-left: 0x;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 30px;
+    height: auto;
+    border-radius: 5px;
+ }
+
+.navbarLateral > li {
+    margin-left: 10px;
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.navbarLateral > li > ul {
+    border: 1px solid rgba(15, 15, 15, 0.747); 
+    background: rgba(15, 15, 15, 0.747); 
+    padding: 0; 
+    margin: 0;
+    position:absolute;
+    left: 0;  
+    display: none;
+}
+
+.navbarLateral > li > ul > li {
+    white-space:nowrap;
+    list-style: none;
+    padding: 0;
+    font-size: 12px;
+}
+
+.navbarLateral > li > ul > ul {  
+    border: 1px solid rgba(15, 15, 15, 0.747); 
+    white-space: nowrap;
+    list-style: none;
+    font-size: 12px;  
+}
+
+.navbarLateral > li >  ul > ul > li > a{
+    background: rgba(15, 15, 15, 0.747); 
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    transition: all 0.2s; 
+}
+
+.navbarLateral > li > ul > li > a { 
+    background: rgba(15, 15, 15, 0.747); 
+    color: white;
+    padding: 10px 20px;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.navbarLateral > li > ul > ul > li > a:hover {
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+.navbarLateral > li > ul > li > a:hover {
+    background: rgb(0, 0, 0);
+    color: white; 
+}
+
+.navbarLateral > li:hover > ul {
+    display: block;
+}
+
+/*coloquei o logo em vez do texto conforme curso para ficar mais parecido com a oficial*/
+header .logo {
+    width: 120px;
+    height: 40px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+header nav a { 
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #aaa;
+}
+
+/*Filme principal*/
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.2), 
+        rgba(0, 0, 0, 5.8)), 
+        url('../img/capa/slayer.jpg');
+    background-size: cover;
+    height: 742px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.filme-principal .titulo {
+    display: flex;
+    width: 220px;
+    height: 220px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+ .filme-principal .descricao {
+    margin:45px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 540px;
+}
+    
+    
+.botao1 {
+    background-color: rgb(255, 255, 255);
+    margin:45px;
+    border: none;
+    color: black;
+    border-radius: 10px;
+    padding: 12px 40px; 
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor:pointer;
+    transition: 0.5s ease all;
+}
+
+/*separei os botao para mudar o backgraund, para ficar mais parecido com da pagina oficial*/
+.botao2 {   
+    background-color: rgba(88, 88, 88, 0.5);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 12px 40px; 
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor:pointer;
+    transition: 0.5s ease all;
+}
+
+.botao1:hover {
+    background-color: white;
+    color:black;
+}
+
+.botao2:hover{
+    background-color: rgba(73, 73, 73, 0.226);
+    color: white;
+}
+
+.botao1 i {
+    margin-right: 10px;
+}
+
+.botao2 i {
+    margin-right: 10px;
+}
+    
+.filme-principal .container {
+    width: 50%;
+}
+
+/*titulo dos carousel*/
+.titulocarousel { 
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif; 
+    font-size: 1.4vw;
+    line-height: 1.25vw;
+    font-weight: 700;
+    margin: 10px 0 10px 40px;
+    align-items: center;
+    color: #f5f5f5;    
+}
+    
+.box-filme{
+    margin-left: 0px;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+    
+.carrosel-filmes{   
+    margin-top: 5px;
+}
+
+ /* coloquei rodapé com nome do projeto e meu linkedin*/   
+.footer { 
+    display: flex;
+    flex-direction: column;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 5%;
+    align-items: center;
+    padding: 10px;
+}   
+
+
